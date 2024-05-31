@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Porcentaje</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../public/css/tailwind.css">
+</head>
+<body class="font-source-code bg-teal-600 flex items-center justify-center min-h-screen text-lg">
+    <div class="bg-teal-900 text-white rounded-lg shadow-lg text-center w-2/5 h-4/5">
+      <h1 class="font-source-code text-4xl mb-4 font-bold text-teal-400 mt-3">Calculadora de porcentaje</h1>
+      <hr class="border-teal-400 border-t-2 mb-8">
+      <div class="flex justify-center items-center mb-8">
+        <label class="text-2x3 mr-4">Calcula el</label>
+        <input id="porcentaje" type="number" class="bg-teal-600 font-sans border-none text-1.5xl text-teal-100 rounded p-0.5 w-30 text-left" placeholder="Porcentaje" required>
+        <label class="text-2x3 mx-2">% de</label>
+        <input id="numero" type="number" class="bg-teal-600 text-1xl border-none text-teal-100 rounded p-0.5 w-30 text-left" placeholder="Número" required>
+      </div>
+    <button id="calcularBtn" class="border-2 border-teal-200 bg-teal-900 text-teal-100 font-source-code font-bold py-2 px-8 rounded-lg mt-2 text-sm cursor-pointer">
+      CALCULAR
+    </button>
+    <div class="mt-16 text-4xl mb-28 font-source-code text-center font-bold text-[#03dbfc]">
+      Resultado: <span id="resultado">0</span>
+    </div>
+  </div>
+
+  <script src="/public/js/calcu.js"></script>
+
+</body>
+</html>
